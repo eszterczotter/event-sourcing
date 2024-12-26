@@ -1,0 +1,10 @@
+<?php
+
+namespace DummyNamespace;
+
+use Webmaesther\EventSourcing\Entities\Aggregate;
+
+class DummyClass extends Aggregate
+{
+    //
+}

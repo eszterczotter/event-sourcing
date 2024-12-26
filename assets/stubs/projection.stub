@@ -1,0 +1,10 @@
+<?php
+
+namespace DummyNamespace;
+
+use Webmaesther\EventSourcing\Projection\Projection;
+
+class DummyClass extends Projection
+{
+    //
+}

@@ -1,0 +1,50 @@
+{
+    "name": "webmaesther/event-sourcing",
+    "version": "0.0.0",
+    "description": "A laravel package to help with creating event-sourced applications",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": "^8.4",
+        "laravel/framework": "^11.36"
+    },
+    "autoload": {
+        "psr-4": {
+            "Webmaesther\\EventSourcing\\": "src/"
+        },
+        "files": [
+            "helpers/path.php",
+            "helpers/composer.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "Eszter Czotter",
+            "email": "eszter.czotter@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "require-dev": {
+        "pestphp/pest": "^3.7",
+        "pestphp/pest-plugin-laravel": "^3.0",
+        "laravel/pint": "^1.18",
+        "mockery/mockery": "^1.6"
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Webmaesther\\EventSourcing\\EventSourcingServiceProvider"
+            ]
+        }
+    }
+}

@@ -1,0 +1,10 @@
+<?php
+
+namespace DummyNamespace;
+
+use Webmaesther\EventSourcing\Entities\Segregate;
+
+class DummyClass extends Segregate
+{
+    //
+}

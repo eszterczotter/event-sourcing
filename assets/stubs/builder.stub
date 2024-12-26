@@ -1,0 +1,25 @@
+<?php
+
+namespace DummyNamespace;
+
+use Webmaesther\EventSourcing\ObjectBuilder;
+
+class DummyClass extends ObjectBuilder
+{
+    /**
+     * The class of the object to build.
+     *
+     * @var class-string
+     */
+    protected string $class;
+
+    /**
+     * The definition for the constructor.
+     */
+    protected function definition(): array
+    {
+        return [
+            //
+        ];
+    }
+}
